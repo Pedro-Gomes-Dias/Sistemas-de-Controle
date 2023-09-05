@@ -1,0 +1,37 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Rail" CircId="Rail-1" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="524,388" rotation="0" hflip="1" vflip="1" label="Rail-1" idLabPos="-16,-24" labelrot="0" valLabPos="-8,5" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="Resistor" CircId="Resistor-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="708,388" rotation="0" hflip="1" vflip="1" label="Resistor-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-3" mainComp="false" Show_id="false" Show_Val="false" Pos="764,448" rotation="-270" hflip="1" vflip="1" label="Led-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="764,560" rotation="0" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Switch" CircId="Switch-8" mainComp="false" Show_id="false" Show_Val="false" Pos="616,388" rotation="0" hflip="1" vflip="1" label="Switch-8" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Probe" CircId="Probe-18" mainComp="false" Show_id="false" Show_Val="true" Pos="676,296" rotation="-45" hflip="1" vflip="1" label="Probe-18" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-26" mainComp="false" Show_id="false" Show_Val="true" Pos="860,328" rotation="-45" hflip="1" vflip="1" label="Probe-26" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Node" CircId="Node-24" mainComp="false" Pos="660,388" />
+
+<item itemtype="Node" CircId="Node-28" mainComp="false" Pos="764,388" />
+
+<item itemtype="Connector" uid="connector-19" startpinid="Led-3-rPin" endpinid="Ground-5-Gnd" pointList="764,464,764,544" />
+
+<item itemtype="Connector" uid="connector-20" startpinid="Resistor-2-rPin" endpinid="Node-28-0" pointList="724,388,764,388" />
+
+<item itemtype="Connector" uid="connector-21" startpinid="Rail-1-outnod" endpinid="Switch-8-pinP0" pointList="540,388,600,388" />
+
+<item itemtype="Connector" uid="connector-22" startpinid="Switch-8-switch0pinN" endpinid="Node-24-0" pointList="632,388,660,388" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Probe-18-inpin" endpinid="Node-24-1" pointList="660,312,660,388" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Node-24-2" endpinid="Resistor-2-lPin" pointList="660,388,692,388" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Probe-26-inpin" endpinid="Node-28-1" pointList="844,344,844,388,764,388" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Node-28-2" endpinid="Led-3-lPin" pointList="764,388,764,432" />
+
+</circuit>
